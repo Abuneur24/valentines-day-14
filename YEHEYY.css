@@ -1,0 +1,24 @@
+h1{
+    font-family: Arial Black;
+    font-size: 40px;
+    color: crimson;
+}
+body{
+    background-image: linear-gradient(to bottom, hotpink, pink);
+}
+img{
+    height: 300px;
+    border-radius: 25px;
+}
+#scream{
+    font-family: Arial Black;
+    font-size: 30px;
+    display: inline-block;
+    background-color: white;
+    color: hotpink;
+    border-radius: 35px;
+    height: 100px;
+    width: 400px;
+    text-align:center;
+    padding: 15px;
+}

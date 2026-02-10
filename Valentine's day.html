@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Valens.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <p id="question">Will You Be My <br>
+            VALENTINE?<br>
+            <img src="Heart.png"><br>
+            <img src="pictureofme.jpg" id="picture">
+        </p><br>
+        <span  id="emoji" style="font-size: 150px;">&#128536;</span>
+        <p id="Context">
+            <span style="font-size: 30px;">&#128197</span> When: February 14, 2026<br>
+            <span style="font-size: 30px;">&#127860</span> What: Breakfast Date<br>
+            <span style="font-size: 30px;">&#127978</span> Where: Surigao City Mall
+        </p>
+        <br>
+            <a href="YEHEYY!!.html" style="text-decoration: none;"><button id="bttn1">Yes</button></a>
+            <button id="bttn2" onclick="moveNo()">No</button>
+
+        <script>
+        let yesSize = 1;
+
+        function moveNo(){
+            const btn = document.getElementById("bttn2");
+            const yesBtn = document.getElementById("bttn1");
+            const emoji = document.getElementById("emoji");
+
+            emoji.innerHTML = "&#128546;";
+
+            yesSize += 0.5;
+            yesBtn.style.transform = "scale(" + yesSize + ")";
+
+            btn.style.position = "absolute";
+
+            const maxX = window.innerWidth - btn.offsetWidth;
+            const maxY = window.innerHeight - btn.offsetHeight;
+
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+
+            btn.style.left = randomX + "px";
+            btn.style.top = randomY + "px";
+        }
+        </script>
+
+    </body>
+</html>
